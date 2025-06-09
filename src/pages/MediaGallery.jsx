@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/mediagallery.css";
+import "../styles/mediaGallery.css";
 import img1 from "../assets/media-gallery/1.jpeg";
 import img2 from "../assets/media-gallery/2.jpeg";
 import img3 from "../assets/media-gallery/3.jpeg";
