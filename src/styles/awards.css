@@ -1,0 +1,221 @@
+/* Banner Styles */
+.course-banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #3b82f6;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+  }
+  
+  .banner-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 50, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .breadcrumb {
+    color: #eee;
+    font-size: 1rem;
+  }
+  
+  .breadcrumb-link {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-active {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  
+  /* Main Content Styles */
+  .awards-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .awards-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .awards-header h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .awards-subtitle {
+    color: #3b82f6;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .deadline {
+    color: #e74c3c;
+    font-size: 1.1rem;
+  }
+  
+  /* Objectives Section */
+  .awards-section {
+    margin-bottom: 3rem;
+  }
+  
+  .awards-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .objectives-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .objectives-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+  }
+  
+  .objectives-list li::before {
+    content: "•";
+    color: #3b82f6;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Awards Categories */
+  .awards-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .award-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .award-card h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .nominate-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .nominate-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Organizers Section */
+  .organizers-section {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  
+  .organizers-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .organizers-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .organizers-logos span {
+    padding: 0.8rem 1.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #34495e;
+  }
+  
+  /* Download Section */
+  .download-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: #10b981;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+  }
+  
+  .download-btn:hover {
+    background-color: #059669;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .course-banner {
+      height: 200px;
+    }
+    
+    .banner-title {
+      font-size: 2rem;
+    }
+    
+    .awards-content {
+      padding: 1.5rem;
+    }
+    
+    .awards-categories {
+      grid-template-columns: 1fr;
+    }
+  }

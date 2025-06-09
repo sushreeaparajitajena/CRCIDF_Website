@@ -1,0 +1,385 @@
+/* Base Styles */
+.careers-page-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Banner */
+  .careers-hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-overlay {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Main Content */
+  .careers-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .intro-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
+  
+  .intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Tabs */
+  .tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .tab-btn {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    color: #3b82f6;
+  }
+  
+  .tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #3b82f6;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    padding: 2rem 0;
+  }
+  
+  /* Internship Section */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .benefit-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #e1e1e1;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-card.expanded {
+    border-color: #3b82f6;
+    background-color: #f8fafc;
+  }
+  
+  .benefit-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .benefit-card h4 {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .benefit-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .benefit-card.expanded .benefit-details {
+    max-height: 100px;
+  }
+  
+  /* Careers Section */
+  .jobs-list {
+    margin-top: 2rem;
+  }
+  
+  .job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .job-card:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+  }
+  
+  .job-info h4 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  .job-meta {
+    display: flex;
+    gap: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .job-type, .job-location {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .job-type::before {
+    content: '🕒';
+    margin-right: 0.3rem;
+  }
+  
+  .job-location::before {
+    content: '📍';
+    margin-right: 0.3rem;
+  }
+  
+  .apply-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .custom-opportunity {
+    background-color: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .custom-opportunity h4 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  /* Apply Section */
+  .apply-section {
+    background-color: #3b82f6;
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    text-align: center;
+  }
+  
+  .apply-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .apply-section h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  
+  .apply-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .apply-section a {
+    color: rgb(17, 1, 1);
+    font-weight: 500;
+
+    text-decoration: underline;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .primary-cta, .secondary-cta {
+    padding: 0.8rem 1.8rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .primary-cta {
+    background-color: white;
+    color: #3b82f6;
+    border: 2px solid white;
+  }
+  
+  .primary-cta:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .secondary-cta {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .secondary-cta:hover {
+    background-color: white;
+    color: #3b82f6;
+  }
+  
+  /* Culture Section */
+  .culture-section {
+    margin-top: 3rem;
+  }
+  
+  .culture-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .culture-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background-color: rgba(236, 236, 246, 0.688);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .culture-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .culture-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .culture-card h4 {
+    margin: 0 0 1rem 0;
+    color: #2c3e50;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .careers-hero {
+      height: 300px;
+    }
+    
+    .hero-overlay h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-overlay p {
+      font-size: 1rem;
+    }
+    
+    .tabs-container {
+      flex-direction: column;
+    }
+    
+    .tab-btn {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .job-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .apply-btn {
+      margin-top: 1rem;
+      align-self: flex-end;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .primary-cta, .secondary-cta {
+      width: 100%;
+      text-align: center;
+    }
+  }
